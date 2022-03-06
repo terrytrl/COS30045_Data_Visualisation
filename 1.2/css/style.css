@@ -1,0 +1,82 @@
+body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+    padding: 50px;
+}
+
+h2 {
+    color: blue;
+    font-family: verdana;
+    font-size: 100%;
+}
+
+p {
+    font-family: verdana;
+}
+
+figure { 	
+    display: block; 	
+    border: 1px solid #333; 
+    width: "450";
+    height: "400";
+} 
+
+figcaption { 	
+    float: center; 	
+    font-style: italic;
+    padding: 4px; 
+}
+
+#image1 {
+    display: block;
+    width: "450";
+    height: "400";
+}
+
+#image2 {
+    display: none;
+    width: "450";
+    height: "400";
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    opacity: 0.75;
+    color: black;
+    text-align: center;
+}
+
+#button2011 {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#button2017 {
+    background-color: orange; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+

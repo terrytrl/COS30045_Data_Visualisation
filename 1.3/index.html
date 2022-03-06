@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description"    content="This is a template"/>
+    <meta name="keywords"       content="HTML, CSS"/>
+    <meta name="author"         content="Terry Lay - 1742434"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/buttonScript.js"></script>
+    <title>DataVis_1.3</title>
+</head>
+    <body>
+        <h1>Drawing Shapes with SVG</h1>
+        <svg width="500" height ="200" >
+            <defs>
+                <filter id="f1" x="0" y="0">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="100" />
+                </filter>
+            </defs>
+            <rect width="500" height="200" stroke="green" stroke-width="3"
+            fill="blue" filter="url(#f1)" />
+            <g>
+                <circle cx="500" cy="20" r="50" fill="yellow" stroke="yellow" stroke-width="2"/>
+                <animateTransform attributeName="transform" type="rotate" 
+                values="1 100 -500; 2 200 -1000; 3 300 -1500; 4 400 -2000; 5 500 -2500; 6 600 -3000; 7 700 -3500; 8 800 -4000"
+                 dur="11s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+            </g>
+            <g transform="translate(10, 0)">
+                <rect x="30" y="70" width="15" height="70" fill="brown" stroke-width="2"/>
+                <rect x="29" y="70" width="5" height="70" fill="rgb(133, 107, 0, 0.3)" stroke-width="2"/>
+
+                <circle cx="30" cy="60" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="40" cy="50" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="50" cy="65" r="20" fill="green" stroke="black" stroke-width="2"/>
+            </g>
+            <g transform="translate(80, -10)">
+                <rect x="30" y="70" width="15" height="70" fill="brown" stroke-width="2"/>
+                <rect x="29" y="70" width="5" height="70" fill="rgb(133, 107, 0, 0.3)" stroke-width="2"/>
+
+                <circle cx="30" cy="60" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="40" cy="50" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="50" cy="65" r="20" fill="green" stroke="black" stroke-width="2"/>
+            </g>
+            <g transform="translate(50, 10)">
+                <rect x="30" y="70" width="15" height="70" fill="brown" stroke-width="2"/>
+                <rect x="29" y="70" width="5" height="70" fill="rgb(133, 107, 0, 0.3)" stroke-width="2"/>
+
+                <circle cx="30" cy="60" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="40" cy="50" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="50" cy="65" r="20" fill="green" stroke="black" stroke-width="2"/>
+            </g>
+            <g transform="translate(100, 20)">
+                <rect x="30" y="70" width="15" height="70" fill="brown" stroke-width="2"/>
+                <rect x="29" y="70" width="5" height="70" fill="rgb(133, 107, 0, 0.3)" stroke-width="2"/>
+
+                <circle cx="30" cy="60" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="40" cy="50" r="20" fill="green" stroke="black" stroke-width="2"/>
+                <circle cx="50" cy="65" r="20" fill="green" stroke="black" stroke-width="2"/>
+            </g>
+            <g>
+                <rect x="0" y="0" width="500" height="200">
+                    <animate id="animation1"
+                             attributeName="opacity"
+                             from="0" to=".75" dur="10s"
+                             begin="0s;animation2.end" />
+                    <animate id="animation2"
+                             attributeName="opacity"
+                             from="1" to="0" dur="1s" 
+                             begin="animation1.end" />
+                </rect>
+            </g>
+            <g>
+                <!--<circle id="circle" cx="30", cy="60", r="20" fill="red" stroke="black" stroke-width="2"/>-->
+
+                <!-- https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/ -->
+                <!-- Interactive SVG... follow this tutorial. :) -->
+             
+                
+                <rect x="0" y="0" width="30" height="20" fill="#fafafa"/>
+                <rect x="4" y="5" width="8" height="10" fill="#007bff"/>
+                <rect x="18" y="5" width="8" height="10"   fill="#888"/>
+                
+            </g>
+        </svg>
+        <footer>COS30045 Data Visualisation<br>Terry Lay - 1742434</footer>
+    </body>
+    
+</html>

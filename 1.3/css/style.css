@@ -1,0 +1,26 @@
+svg {
+    background-color: slat;
+}
+
+footer {
+    color: slategray;
+    width: 200px;
+}
+
+.path {
+    stroke-dasharray: 100;
+    animation: dash 5s linear;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+ 
+  .static {
+    cursor: not-allowed;
+  }
+  .draggable {
+    cursor: move;
+  }
